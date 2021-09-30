@@ -38,6 +38,8 @@ class Shaxzoda():
         self.end = end
     
     def kesibUtadimi(self, circle:aylana):
+        if circle.niIchidami(self.start) and circle.niIchidami(self.end):
+            return False
         if circle.niIchidami(self.start) or circle.niIchidami(self.end):
             return True
         else:
